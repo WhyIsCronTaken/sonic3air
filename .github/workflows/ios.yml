@@ -16,7 +16,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Correct Directory
-        run: cd /Users/runner/work/sonic3air/Oxygen/sonicthrickles/build/_xcode/sonic3air_iosApp
+        run: dir
+#        run: cd /Users/runner/work/sonic3air/Oxygen/sonicthrickles/build/_xcode/sonic3air_iosApp
       - name: Set Default Scheme
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
